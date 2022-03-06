@@ -22,7 +22,5 @@ jobs:
           R -e 'renv::run("Disposals_Analysis.R")'
           # Add picture
           cml-publish disposals_plot.png --md > report.md 
-          # Add table
-          cat mymodel.html >> report.md
           # Send report
           cml-send-comment report.md
